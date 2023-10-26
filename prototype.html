@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype - Transmission Line Fault Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* Add your custom CSS styles here */
+
+        /* Set a background color or image for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the header with a background color and text color */
+        header {
+            background-color: #333; /* Dark background color */
+            color: white; /* White text color */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Create a container for your content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white; /* White background color for content */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* Style your paragraphs and text */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Center the image within its container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Style your images to fit the container */
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Style the algorithm section */
+        .algorithm-section {
+            background-color: #f9f9f9; /* Light gray background color for the algorithm section */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Style the algorithm heading */
+        .algorithm-heading {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Style the algorithm description */
+        .algorithm-description {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header for your page -->
+    <header>
+        <h1>Prototype - Transmission Line Fault Detection</h1>
+    </header>
+
+    <!-- Content container -->
+    <div class="container">
+        <!-- Introduction -->
+        <p>
+            In the prototype phase, we implement the Random Forest algorithm for predicting transmission line faults based on current and voltage measurements.
+        </p>
+
+        <!-- Image illustrating the prototype phase -->
+        <div class="image-container">
+            <img src="../static/asset/prototype.png" alt="Prototype Phase" class="image">
+        </div>
+
+        <!-- Algorithm section -->
+        <div class="algorithm-section">
+            <h2 class="algorithm-heading">Random Forest Algorithm</h2>
+            <p class="algorithm-description">
+                We use the Random Forest algorithm to classify fault types based on input data. This ensemble learning method combines multiple decision trees to make predictions. It has proven to be effective in fault detection due to its ability to handle complex data relationships.
+            </p>
+            <p class="algorithm-description">
+                The algorithm takes current and voltage values as input and outputs one of the following fault types:
+            </p>
+            <ul>
+                <ul>
+                    <li>Ground Fault</li>
+                    <li>Fault in Line A</li>
+                    <li>Fault in Line B</li>
+                    <li>Fault in Line C</li>
+                    <li>LG fault (Between Phase A and Ground)</li>
+                    <li>LG fault (Between Phase B and Ground)</li>
+                    <li>LG fault (Between Phase C and Ground)</li>
+                    <li>LL fault (Between Phase B and Phase A)</li>
+                    <li>LL fault (Between Phase C and Phase B)</li>
+                    <li>LL fault (Between Phase C and Phase A)</li>
+                    <li>LLG Fault (Between Phases A, B, and Ground)</li>
+                    <li>LLG Fault (Between Phases A, C, and Ground)</li>
+                    <li>LLG Fault (Between Phases C, B, and Ground)</li>
+                    <li>LLL Fault (Between all three phases)</li>
+                    <li>LLLG Fault (Three phase symmetrical fault)</li>
+                    <!-- Add more fault types here -->
+                </ul>
+                
+            </ul>
+            <p class="algorithm-description">
+                This approach allows us to proactively identify and address transmission line issues, ensuring the reliability of the power distribution system.
+            </p>
+        </div>
+
+        <!-- Conclusion -->
+        <p>
+            The prototype phase is a critical step in demonstrating the effectiveness of our fault detection system. By utilizing the Random Forest algorithm, we aim to provide accurate and timely fault predictions for enhanced power grid management.
+        </p>
+    </div>
+</body>
+</html>

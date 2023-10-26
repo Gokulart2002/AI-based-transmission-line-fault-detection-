@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Based Transmission Line Fault Detection - Result</title>
+    <style>
+        /* Set the background image */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./static/asset/Transmission-Lines.jpg'); /* Replace with the actual path to your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Basic styling for the page */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background to improve readability */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Style the output box */
+        .output-box {
+            padding: 20px;
+            font-size: 18px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Based Transmission Line Fault Detection - Result</h1>
+        <div class="output-box">
+            <h2>Output is:</h2>
+            <p>
+                <!-- Display your prediction result here -->
+                Type of fault is: {{ output_text }}
+            </p>
+        </div>
+    </div>
+</body>
+</html>
